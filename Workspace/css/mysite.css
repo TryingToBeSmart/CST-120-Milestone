@@ -1,0 +1,87 @@
+body {
+    background-color: #999999;
+}
+
+ul,
+li {
+    /* unordered list in the center and inside*/
+    list-style-position: inside;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* style for when curser hovers on table rows */
+tr:hover {
+    background-color: rgb(144, 173, 166);
+    cursor: default;
+}
+
+/* style to make table nice looking */
+table,
+tr,
+th,
+td {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    color: rgb(0, 0, 87);
+}
+
+h1 {
+    /* h1 font, bold, and large */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: black 2px 2px 5px;
+}
+
+p {
+    /* Center all text in the paragraph
+        change text type and size */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    background-color: #99999936;
+    border-radius: 20px;
+}
+
+a {
+    /* color links, remove underline, add slide in animation */
+    color: rgb(0, 0, 87);
+    text-decoration: none;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+/* slide in animation, moves object from right to left */
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+a:hover {
+    /* shadow when hovering */
+    text-shadow: black 5px 5px 10px;
+}
+img{
+    /* add border, shadow, margin, and curved edges around images */
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: black 15px 15px 25px;
+    margin: 15px;
+}
+video{
+    /* add border, shadow, margin, and curved edges around video */
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: black 15px 15px 25px;
+    margin: 15px;
+}

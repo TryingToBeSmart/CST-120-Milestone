@@ -1,4 +1,6 @@
 # CST-120-Milestone
+3/19/23 Milestone 3: added external css stylesheet.  Added borders and shadows to images and videos.  Added slide animation and hover shadow for all links.
+
 3/12/23 Milestone 2: added 4 new pages (Mountains, Gorge, Wa Coast, Hawaii).  Added several images, videos, and 1 sound from Zapsplat that autoplays ocean sounds for the Wa Coast page.  I think it is annoying if it were a live page (I hate it when live websites autoplay things, if I want it to play, I will click play :>), but it was good practice for me to know how.
 TODO: I would like to learn how to adjust the 'map' page to use google maps with this tutorial: https://www.w3schools.com/graphics/google_maps_intro.asp  I want to try to make highlighted locations on the map that also highlight the table contents that are connected, and add a link to the live Google map that links to the correct webpage(Mountains, Gorge, Wa Coast, Hawaii).
 

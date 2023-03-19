@@ -12,59 +12,37 @@ to add JS listener so that when a tr is clicked, it links to a page-->
     }
 </script>
 
-<style>
-    /* style for when curser hovers on table rows */
-    tr:hover {
-        background-color: rgb(24, 49, 43);
-        cursor: default;
-    }
-
-    /* style to make table nice looking */
-    table,
-    tr,
-    th,
-    td {
-        padding: 10px;
-        border: 2px solid black;
-        border-collapse: collapse;
-        /* background-color: rgb(35, 83, 97); */
-        color: rgb(197, 236, 217);
-    }
-</style>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
+    <link rel="stylesheet" type="text/CSS" href="..\Workspace\css\mysite.css">
+</head>
 </head>
 
-<body style="background-color:	#27484e">
-    <!--change background color-->
-    <h1>
-        <font color="black">Map</font>
-    </h1>
-    <!--heading text color-->
-    <h2><a style="color: rgb(127, 127, 250);" href="home.html">Return Home</a></h2>
-    <!--link back to home page with color change-->
-    <table align="center">
+<body>
+    <h1>Map</h1>
+    <h2><a href="home.html">Return Home</a></h2>
+    <!--link back to home page-->
+    <table>
         <tr id="row-1">
-            <th><a style="font-size: larger; color: rgb(197, 236, 217);" href="mountains.html">Mountains</a></th>
+            <th><a href="mountains.html">Mountains</a></th>
             <!--link to mountains page-->
             <td>Mt. St. Helens, Mt. Adams, Mt. Hood</td>
         </tr>
         <tr>
-            <th><a style="font-size: larger; color: rgb(197, 236, 217);" href="gorge.html">Columbia River Gorge</a></th>
+            <th><a href="gorge.html">Columbia River Gorge</a></th>
             <!--link to gorge page-->
             <td>Dog Mountain, Beacon Rock, Multnomah Falls</td>
         </tr>
         <tr>
-            <th><a style="font-size: larger; color: rgb(197, 236, 217);" href="coast.html">Washington Coast</a></th>
+            <th><a href="coast.html">Washington Coast</a></th>
             <!--link to coast page-->
             <td>Long Beach, Cape Disappointment</td>
         </tr>
         <tr>
-            <th><a style="font-size: larger; color: rgb(197, 236, 217);" href="hawaii.html">Hawaii</a></th>
+            <th><a href="hawaii.html">Hawaii</a></th>
             <!--link to hawaii page-->
             <td>Kona, Maui</td>
         </tr>
