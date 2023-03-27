@@ -4,11 +4,11 @@ body {
 
 ul,
 li {
-    /* unordered list in the center and inside*/
+    /* unordered list center and on inside*/
     list-style-position: inside;
-    text-align: center;
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-family: 'Permanent Marker';
 }
 
 /* style for when curser hovers on table rows */
@@ -45,6 +45,7 @@ p {
     font-size: 30px;
     background-color: #99999936;
     border-radius: 20px;
+
 }
 
 a {
@@ -67,21 +68,69 @@ a {
         width: 100%;
     }
 }
+
 a:hover {
     /* shadow when hovering */
     text-shadow: black 5px 5px 10px;
 }
-img{
+
+img {
     /* add border, shadow, margin, and curved edges around images */
     border-radius: 20px;
     border: 2px solid black;
     box-shadow: black 15px 15px 25px;
     margin: 15px;
 }
-video{
+
+video {
     /* add border, shadow, margin, and curved edges around video */
     border-radius: 20px;
     border: 2px solid black;
     box-shadow: black 15px 15px 25px;
     margin: 15px;
 }
+
+/* set all elements to fit inside the box */
+* {
+    box-sizing: border-box;
+}
+
+/* Flexbox container */
+.container {
+    display: flex;
+    height: 1000px;
+    width: auto;
+    /* adjust to the size of screen*/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* child of flex container: 50% height of flex container */
+.child {
+    max-height: 50%;
+    max-width: 100%;
+    /* adjust to the size of screen*/
+    margin: 10px;
+    height: fit-content;
+    /* adjust to the size of screen*/
+}
+
+/* Dont think this works:
+flexbox item that will be 3x larger.
+shorthand for flex-grow, flex-shrink and flex-basis combined. The second and 
+third parameters (flex-shrink and flex-basis) are optional. 
+The default is 0 1 auto, but if you set it with a single number value, like flex: 5;
+, that changes the flex-basis to 0%, so it’s like setting 
+flex-grow: 5; flex-shrink: 1; flex-basis: 0%;*/
+.largeItem {
+    flex: 3;
+}
+
+/* Not sure if this works: 
+adjust for the width of the screen that is viewing 
+https://www.w3schools.com/css/css3_flexbox_responsive.asp*/
+/* @media (max-width: 800px){
+    .child, .largeItem{
+        flex: 100%;
+    }
+} */

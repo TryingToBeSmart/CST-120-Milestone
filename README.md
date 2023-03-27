@@ -1,4 +1,6 @@
 # CST-120-Milestone
+3/26/23 Milestone 4: Added Flex box in the stylesheet.  Added container and child classes in the stylesheet to adjust the sizes of images and videos.  The items will wrap when the page becomes too small to see them on the same row.  They also have a maximum size and they have even spacing between them.  I really enjoyed learning about the Flex box!  Also added 'permanent marker' custom font to the home page from fonts.google.com.
+
 3/19/23 Milestone 3: added external css stylesheet.  Added borders and shadows to images and videos.  Added slide animation and hover shadow for all links.
 
 3/12/23 Milestone 2: added 4 new pages (Mountains, Gorge, Wa Coast, Hawaii).  Added several images, videos, and 1 sound from Zapsplat that autoplays ocean sounds for the Wa Coast page.  I think it is annoying if it were a live page (I hate it when live websites autoplay things, if I want it to play, I will click play :>), but it was good practice for me to know how.
