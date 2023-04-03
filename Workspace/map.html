@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--https://robertcooper.me/post/table-row-links found how to adjust table
-to add JS listener so that when a tr is clicked, it links to a page-->
-<script>
-    for (let i = 1; i <= 4; i++) {
-        const row = document.getElementById(`row-${i}`);
-        row.addEventListener("click", () => {
-            window.location.href = `/row-${i}`;
-        });
-    }
-</script>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
     <link rel="stylesheet" type="text/CSS" href="..\Workspace\css\mysite.css">
-</head>
+    <script src="events.js"></script>
 </head>
 
 <body>
     <h1>Map</h1>
     <h2><a href="home.html">Return Home</a></h2>
     <!--link back to home page-->
-    <table>
-        <tr id="row-1">
+    <table id="changeImage">
+        <tr id="row-0" onmouseover="highlighted('mountains')" onmouseout="highlighted()">
             <th><a href="mountains.html">Mountains</a></th>
             <!--link to mountains page-->
             <td>Mt. St. Helens, Mt. Adams, Mt. Hood</td>
         </tr>
-        <tr>
+        <tr id="row-1"  onmouseover="highlighted('gorge')" onmouseout="highlighted()">
             <th><a href="gorge.html">Columbia River Gorge</a></th>
             <!--link to gorge page-->
             <td>Dog Mountain, Beacon Rock, Multnomah Falls</td>
         </tr>
-        <tr>
+        <tr id="row-2"  onmouseover="highlighted('coast')" onmouseout="highlighted()">
             <th><a href="coast.html">Washington Coast</a></th>
             <!--link to coast page-->
             <td>Long Beach, Cape Disappointment</td>
         </tr>
-        <tr>
+        <tr id="row-3"  onmouseover="highlighted('hawaii')" onmouseout="highlighted()">
             <th><a href="hawaii.html">Hawaii</a></th>
             <!--link to hawaii page-->
             <td>Kona, Maui</td>
         </tr>
     </table>
-    <img class="container child" src="..\pictures\NW Map.png" alt="map of the Portland Or area"></p>
-    <!--picture aligned in the center of page-->
+    <!-- <div class="mapImage"> -->
+        <img id="mapImage" class="child" src="..\pictures\NW Map.png" alt="map of the Portland Or area">
+        <!--picture aligned in the center of page-->
+    </div>
+
+    <!--https://robertcooper.me/post/table-row-links found how to adjust table
+to add JS listener so that when a tr is clicked, it links to a page-->
+<!-- Can't get it to work -->
+<!-- <script>
+    for (let i = 1; i <= 4; i++) {
+        const row = document.getElementById(`row-${i}`);
+        row.addEventListener("click", () => {
+            window.location.href = `/row-${i}`;
+        });
+    }
+</script> -->
 </body>
 
 </html>

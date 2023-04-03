@@ -11,13 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="events.js"></script>
 </head>
 
-<style>
-
-</style>
-
 <body>
+    
     <h1>Home</h1>
     <h2 style= "font-family: 'Permanent Marker', cursive" align="right">Jess Larson and Family</h2>
     <hr>
@@ -27,7 +25,7 @@
         <!--add picture to the right side of page-->
         Hi, I'm Jess, and these are my favorite people!<br>
         <i>I get to share life with my wife and kids.</i> <br>
-        <b>God is so good to us!</b><br>
+        <b id="special" onmouseover="changeColor()" onmouseout="changeColorBack()">God is so good to us!</b><br>
         <!--bold-->
         We enjoy a lot of outdoor activities!<br>
         I would like to share some of them with you on this website<br>
@@ -41,6 +39,12 @@
             <li>Hawaii</li>
         </ul>
     </p>
+    <script>
+        document.getElementById("special").addEventListener("click", function(){alert("God is Good!"); });
+        // document.getElementById("changeColor").addEventListener("click", changeColor());
+        // document.getElementById("changeColor").addEventListener("click", changeColorBack());
+    </script>
+
 </body>
 
 </html>
