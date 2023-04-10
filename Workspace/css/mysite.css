@@ -52,8 +52,17 @@ a {
     /* color links, remove underline, add slide in animation */
     color: rgb(0, 0, 87);
     text-decoration: none;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-name: slidein;
+}
+
+button{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 15px;
 }
 
 /* slide in animation, moves object from right to left */

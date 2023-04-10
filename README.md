@@ -1,4 +1,6 @@
 # CST-120-Milestone
+4/9/23 Milestone 6: Added Bootstrap menu and JQuery animations.
+
 4/2/23 Milestone 5: Added events.js with events.  Learned how to use listeners to wait for things to happen on the page and then trigger events.  Updated Home and Map pages with some events.
 
 3/26/23 Milestone 4: Added Flex box in the stylesheet.  Added container and child classes in the stylesheet to adjust the sizes of images and videos.  The items will wrap when the page becomes too small to see them on the same row.  They also have a maximum size and they have even spacing between them.  I really enjoyed learning about the Flex box!  Also added 'permanent marker' custom font to the home page from fonts.google.com.
