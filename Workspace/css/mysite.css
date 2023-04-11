@@ -117,7 +117,7 @@ video {
 /* child of flex container: 50% height of flex container */
 .child {
     max-height: 50%;
-    max-width: 100%;
+    max-width: 95%;
     /* adjust to the size of screen*/
     margin: 10px;
     height: fit-content;
