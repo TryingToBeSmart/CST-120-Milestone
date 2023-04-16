@@ -20,8 +20,10 @@
     <script>
         $(document).ready(function(){
             // hide everything then fade in slowly
-            $("body").hide()
-            $("body").fadeIn(5000);
+            // $("body").hide()
+            $("#loading").show();//put black loading div over the top
+            // $("body").fadeIn(500);
+            $("#loading").fadeOut(5000);//fade out black loading page
 
             // When img is clicked, it fades out then back in
             $("img").click(function(){
@@ -42,6 +44,11 @@
 <body>
 
 <body>
+    <div id="loading" style="background-color: black; position: absolute; width: 100%; height: 110%; overflow: hidden;">
+      <div class="spinner-border text-primary child" role="status" style="position: absolute; align-items: center;">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <!-- Bootstrap Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(13, 13, 90);">
         <a class="navbar-brand" href="home.html">My Site</a>
@@ -60,14 +67,44 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Places
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <!-- Bootstrap drop down menu to each of the location pages -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: rgb(97, 184, 255); box-shadow: 10px 10px 10px black;">
                 <a class="dropdown-item" href="gorge.html">Columbia River Gorge</a>
                 <a class="dropdown-item" href="coast.html">Longview Wa Coast</a>
                 <a class="dropdown-item" href="hawaii.html">Hawaii</a>
                 <a class="dropdown-item" href="mountains.html">Mt Hood, St Helens, Adams</a>
               </div>
             </li>
-            <!-- <div class="spinner-border text-primary" role="status">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sign Up
+              </a>
+              <!-- Bootstrap dropdown that opens up a Bootstrap Form that posts info to postman in JSON format -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: rgb(97, 184, 255); box-shadow: 10px 10px 10px black; padding: 15px;">
+              <form method="POST" action="https://postman-echo.com/post">
+                <div class="mb-10">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName">
+                </div>
+                <div class="mb-10">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName">
+                </div>
+                <div class="mb-10">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email">
+                  <!--NOT USING <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                </div>
+                <div class="mb-10">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" name="password">
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Submit</button>
+              </form>
+            </div>
+            </li>
+            <!-- Decided not to use spinners, but they were fun for a minute
+              <div class="spinner-border text-primary" role="status">
                 <span class="sr-only">Loading...</span>
               </div>
               <div class="spinner-border text-secondary" role="status">
@@ -125,7 +162,7 @@
     <hr>
     <p>
         <img class="child" src="..\pictures\_A7R6874.jpg" alt="Family pic on bridge"
-            style="float: right; max-height: 800px;">
+            style="float: right; max-height: 700px;">
         <!--add picture to the right side of page-->
         Hi, I'm Jess, and these are my favorite people!<br>
         <i>I get to share life with my wife and kids.</i> <br>
@@ -133,7 +170,7 @@
         <!--bold-->
         We enjoy a lot of outdoor activities!<br>
         I would like to share some of them with you on this website<br>
-        <a href="map.html">Click here to see a map of our places</a><br>
+        <a href="map.html" class="slide">Click here to see a map of our places</a><br>
         <!--link to the map page-->
         <button id="buttonList" class="btn btn-primary btn-lg">Toggle List Of Places</button><!--button to reveal list-->
         <ul id="list">

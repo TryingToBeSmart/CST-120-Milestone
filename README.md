@@ -1,4 +1,6 @@
 # CST-120-Milestone
+4/16/23 Milestone 7: Added Bootstrap dropdown that opens up a Bootstrap Form that posts info to postman in JSON format.  Everything is looking good with mobile or large computer monitor.  I like Bootstrap!
+
 4/9/23 Milestone 6: Added Bootstrap menu and JQuery animations.
 
 4/2/23 Milestone 5: Added events.js with events.  Learned how to use listeners to wait for things to happen on the page and then trigger events.  Updated Home and Map pages with some events.

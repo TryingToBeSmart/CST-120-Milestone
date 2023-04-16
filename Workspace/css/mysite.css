@@ -52,8 +52,6 @@ a {
     /* color links, remove underline, add slide in animation */
     color: rgb(0, 0, 87);
     text-decoration: none;
-    animation-duration: 1s;
-    animation-name: slidein;
 }
 
 button{
@@ -65,16 +63,30 @@ button{
     box-shadow: black 5px 5px 15px;
 }
 
+/* page is loading */
+#loading{
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* apply slidein animation */
+.slide{
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
 /* slide in animation, moves object from right to left */
 @keyframes slidein {
     from {
         margin-left: 100%;
-        width: 300%;
+        /* width: 100%; */
     }
 
     to {
         margin-left: 0%;
-        width: 100%;
+        width: 6%;
     }
 }
 
